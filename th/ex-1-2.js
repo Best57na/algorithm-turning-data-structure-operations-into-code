@@ -10,6 +10,9 @@
 */
 
 // Start coding here
+function sumOddNumber(numbers) {
+    return numbers.filter((numbers) => numbers % 2 !== 0 && (numbers % 3 === 0 || numbers % 5 === 0 && numbers % 11 !== 0));
+}
 
 const numbers1 = [1, 2, 3, 5, 6, 8, 11, 13];
 console.log(sumOddNumber(numbers1)); // 8 จาก [3, 5]
